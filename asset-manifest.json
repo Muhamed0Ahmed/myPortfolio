@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/myPortfolio/static/css/main.4e748c38.css",
+    "main.js": "/myPortfolio/static/js/main.18beb1d5.js",
+    "static/js/787.1ed0c42c.chunk.js": "/myPortfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/eccomerceFull.png": "/myPortfolio/static/media/eccomerceFull.05024c1144c9116e68de.png",
+    "static/media/eccomerceSmall.png": "/myPortfolio/static/media/eccomerceSmall.accf0dbbbc748f3fc694.png",
+    "static/media/myReadsHome.png": "/myPortfolio/static/media/myReadsHome.7b3ec79e3e3c726938ac.png",
+    "static/media/myReadsSearch.png": "/myPortfolio/static/media/myReadsSearch.4443083b022a7ef8505f.png",
+    "static/media/skills_portfolio.png": "/myPortfolio/static/media/skills_portfolio.92bb0db955b4141f02fd.png",
+    "static/media/about_portfolio.png": "/myPortfolio/static/media/about_portfolio.de0ba051b491a8abd7fa.png",
+    "static/media/home_portfolio.png": "/myPortfolio/static/media/home_portfolio.7bfa25bae05922a4f34e.png",
+    "static/media/contact_portfolio.png": "/myPortfolio/static/media/contact_portfolio.05166a84abf9eb60e3d6.png",
+    "static/media/arrow.png": "/myPortfolio/static/media/arrow.bcb86b1b281d0c95dbec.png",
+    "index.html": "/myPortfolio/index.html",
+    "main.4e748c38.css.map": "/myPortfolio/static/css/main.4e748c38.css.map",
+    "main.18beb1d5.js.map": "/myPortfolio/static/js/main.18beb1d5.js.map",
+    "787.1ed0c42c.chunk.js.map": "/myPortfolio/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4e748c38.css",
+    "static/js/main.18beb1d5.js"
+  ]
+}
