@@ -1,0 +1,130 @@
+.projects {
+  margin-top: 50px;
+  background-color: var(--color-light);
+  color: var(--color-dark);
+  padding: 70px  10px 10px;
+  min-height: 100vh;
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+/* .projects img {
+  width: 1024px;
+} */
+.projects h2 {
+  text-align: center;
+  font-size: 36px;
+  padding: 30px 15px 10px;
+  position: relative;
+  color: var(--color-sec);
+}
+.projects h2::after {
+  content: "";
+  width: 200px;
+  height: 5px;
+  background-color: var(--color-main);
+  position: absolute;
+  top: 100%;
+  left: calc(50% - 100px);
+}
+.projects h2::before {
+  content: "I Made";
+  width: 100px;
+  font-size: 14px;
+  background-color: var(--color-light);
+  color: var(--color-sec);
+  position: absolute;
+  top: 90%;
+  left: calc(50% - 50px);
+  z-index: 99;
+}
+
+.projects .content-projects .content {
+  /* background-color:white; */
+  margin: 40px 2px;
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+.projects .content-projects .content ul {
+  list-style: none;
+  display: block;
+  height: 700px;
+  width: 100%;
+}
+.projects .content-projects .content ul li {
+  display: inline-block;
+  /* padding:10px 20px; */
+  margin: 20px 10px;
+}
+
+.projects .content-projects .content ul li span.title {
+  padding: 10px 15px;
+  font-size: 20px;
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  /* background-color: var(--color-main);
+  color: var(--color-dark); */
+  border-radius: 8px;
+  /* width:200px; */
+}
+.projects .content-projects .content ul li span.title.active,
+.projects .content-projects .content ul li span.title:hover {
+  background-color: var(--color-main);
+  color: var(--color-dark);
+  
+}
+.projects .content-projects .content ul li .info-project {
+  position: absolute;
+  top: 120px;
+  left: 0px;
+  height: 500px;
+  overflow: auto;
+  overflow-x: scroll;
+  margin: 30px 0;
+  padding: 20px;
+  display: none;
+}
+.projects .content-projects .content ul li .info-project p {
+  text-align: center;
+  padding: 10px;
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  margin-bottom: 10px;
+}
+.projects .content-projects .content ul li span.title.active ~ div {
+  display: block;
+}
+@media (min-width: 550px) {
+  .projects .content-projects .content ul li .info-project {
+    top: 70px;
+  }
+}
+@media (max-width:320px) {
+  img{
+    max-width:250px;
+  }
+  
+}
+
+@media (min-width:320px){
+    img{
+        max-width:300px;
+    }
+}
+
+@media (min-width:425px){
+    img{
+        max-width:400px;
+    }
+}
+@media(min-width:620px ){
+  img{
+    max-width:600px;
+  }
+}
+@media(min-width:820px ){
+  img{
+    max-width:800px;
+  }
+}
+

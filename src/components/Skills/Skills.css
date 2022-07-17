@@ -1,0 +1,133 @@
+.skills {
+  min-height: 100vh;
+  background: var(--color-dark);
+  color: var(--color-light);
+  padding:70px 10px 10px;
+}
+.skills .content-skills {
+  padding: 10px;
+}
+
+.skills .content-skills h2 {
+  text-align: center;
+  font-size: 36px;
+  padding: 30px 5px 10px;
+  position: relative;
+  color: var(--color-light);
+}
+.skills .content-skills h2::after {
+  content: "";
+  width: 200px;
+  height: 5px;
+  background-color: var(--color-main);
+  position: absolute;
+  top: 100%;
+  left: calc(50% - 100px);
+}
+.skills .content-skills h2::before {
+  content: "Can I Do";
+  width: 80px;
+  font-size: 14px;
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  position: absolute;
+  top: 90%;
+  left: calc(50% - 50px);
+  z-index: 99;
+}
+.skills .content-skills .content {
+  padding: 20px 0;
+}
+.skills .content-skills .content .skills-links {
+  list-style: none;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 40px 0px;
+}
+.skills .content-skills .content .skills-links .item {
+  margin: 10px;
+  width: 90px;
+}
+.skills .content-skills .content .skills-links .item button {
+  width: 100%;
+  padding: 10px 15px;
+  color: var(--color-light);
+  background-color: var(--color-dark);
+  border: none;
+  border-left: 5px solid var(--color-light);
+  color: var(--color-light);
+  box-shadow: 2px 2px 5px 2px rgb(125 125 101);
+  opacity: 0.6;
+}
+.skills .content-skills .content .skills-links button:hover,
+.skills .content-skills .content .skills-links button.active {
+  color: var(--color-main);
+  /* border : 0.5px solid var(--color-light); */
+  border-left: 6px solid var(--color-main);
+  border-bottom: 3px solid var(--color-light);
+  opacity: 1;
+}
+
+.skills .content-skills .content .skills-links .item .skill {
+  height: calc(100% - 20px);
+  box-shadow: 2px 2px 5px 2px rgb(125 125 101);
+  position: absolute;
+  top: 0;
+  left: 120px;
+  display: none;
+  margin: 10px 0px;
+  /* padding:10px;  */
+  text-align: center;
+  flex-direction: row;
+}
+.skills .content-skills .content .skills-links .item .skill .left,
+.skills .content-skills .content .skills-links .item .skill .right {
+  display: flex;
+  flex-direction: column;
+}
+
+.skills .content-skills .content .skills-links .item .skill .right {
+  align-items: flex-start;
+  padding: 5px 10px;
+  display: none;
+}
+.skills .content-skills .content .skills-links .item .skill .right h4 {
+  font-size: 18px;
+  color: var(--color-main);
+}
+.skills .content-skills .content .skills-links .item .skill .right span {
+  padding: 5px 15px;
+  margin-top: 5px;
+}
+
+.skills .content-skills .content .skills-links .item button.active ~ .skill {
+  display: flex;
+}
+.skills .content-skills .content .skills-links .item h4 {
+  font-size: 18px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 400;
+  text-align: start;
+  padding: 5px;
+}
+/* .skills .content-skills .content .skills-links .skill .chart{
+    margin:0 auto;
+    text-align:center;
+} */
+
+@media (min-width: 720px) {
+  .skills .content-skills .content .skills-links .item {
+    width: 200px;
+  }
+  .skills .content-skills .content .skills-links .item button {
+    font-size: 18px;
+  }
+  .skills .content-skills .content .skills-links .item .skill {
+    left: 220px;
+    width: calc(100% - 220px);
+  }
+  .skills .content-skills .content .skills-links .item .skill .right {
+    display: flex;
+  }
+}

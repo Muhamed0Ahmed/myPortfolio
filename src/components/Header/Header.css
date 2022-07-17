@@ -1,0 +1,119 @@
+header {
+  background-color: var(--color-main);
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+header .container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.container-header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+}
+
+/* style header brand */
+.container-header .header-brand {
+  color: var(--color-sec);
+  padding: 9px 15px;
+}
+.container-header .header-brand h1 {
+  padding-left: 5px;
+  font-family: var(--font-great-vibes);
+  font-weight: 700px;
+}
+.bars {
+  display:flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap:7px;
+}
+.bars span{
+  width:40px;
+  height: 5px;
+  background-color:var(--color-light);
+  border-radius: 4px;
+}
+.bars span:nth-child(1){
+  width:50px;
+}
+.bars span:nth-child(3){
+  width:30px;
+}
+/* list item header style */
+.container-header .navbar-header {
+  /* display:none; */
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  right: 0px;
+  list-style: none;
+  background-color: var(--color-main);
+  width: 100vw;
+  padding: 5px 20px;
+}
+.container-header .navbar-header li {
+  width: 100%;
+  border-bottom: 1px solid var(--color-sec);
+  padding: 5px;
+  /* margin-top:5px; */
+}
+.container-header .navbar-header li a {
+  text-decoration: none;
+  color: var(--color-sec);
+  padding: 5px;
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  /* background-color: black; */
+}
+.container-header .navbar-header li:hover,
+.container-header .navbar-header li.active {
+  border-bottom: 5px solid var(--color-sec);
+}
+.container-header .navbar-header li:hover a,
+.container-header .navbar-header li.active a {
+  color: var(--color-light);
+}
+
+.container-header button {
+  margin: 10px;
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+}
+
+@media (min-width: 425px) {
+  .container-header .navbar-header {
+    flex-direction: row;
+  }
+  .container-header .navbar-header li {
+    border: none;
+    /* margin-right:3px; */
+  }
+  .container-header .navbar-header li a {
+    text-align: center;
+  }
+}
+@media (min-width: 768px) {
+  .container-header .navbar-header {
+    display: flex;
+    position: relative;
+    max-width: 768px;
+    top: 0;
+    right: 0;
+  }
+  .container-header .navbar-header li {
+    border: none;
+    /* margin-right:3px; */
+  }
+  .container-header .navbar-header li a {
+    text-align: center;
+  }
+  .container-header button {
+    display: none;
+  }
+}

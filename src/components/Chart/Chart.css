@@ -1,0 +1,40 @@
+.container-chart-skill {
+  padding: 10px 15px;
+  color: var(--color-light);
+  text-align: center;
+  width: 200px;
+  border-radius: 8px;
+  margin: 10px;
+  box-shadow: 2px 2px 2px 2px var(--color-main);
+}
+.container-chart-skill .cir-child {
+  margin: 0 auto;
+  position: relative;
+}
+.container-chart-skill .cir-child svg circle {
+  stroke-width: 10px;
+  stroke: var(--color-main);
+  stroke-dashoffset: 502;
+  stroke-dasharray: 502;
+  transform: translate(10px, 10px);
+  /* opacity:1; */
+}
+.container-chart-skill .cir-child svg circle:nth-child(1) {
+  stroke-dashoffset: 0;
+  stroke: rgb(233, 224, 224);
+}
+.container-chart-skill .cir-child svg .circle:nth-child(2) {
+  stroke: var(--color-main);
+}
+.container-chart-skill span {
+  font-size: 36px;
+  position: absolute;
+  top: 70px;
+  left: 70px;
+}
+.container-chart-skill h3 {
+  font-size: 22px;
+  font-family: "Courier New", Courier, monospace;
+  letter-spacing: 5px;
+  font-weight: 300;
+}

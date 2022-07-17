@@ -1,0 +1,60 @@
+.about {
+  margin-top: 50px;
+  background-color: var(--color-light);
+  color: var(--color-dark);
+  padding: 70px 0px;
+  min-height: calc(100vh - 70px);
+}
+.about h2 {
+  text-align: center;
+  font-size: 36px;
+  padding: 30px 15px 10px;
+  position: relative;
+  color: var(--color-sec);
+}
+.about h2::after {
+  content: "";
+  width: 200px;
+  height: 5px;
+  background-color: var(--color-main);
+  position: absolute;
+  top: 100%;
+  left: calc(50% - 100px);
+}
+.about h2::before {
+  content: "who I am";
+  width: 100px;
+  font-size: 14px;
+  background-color: var(--color-light);
+  color: var(--color-sec);
+  position: absolute;
+  top: 90%;
+  left: calc(50% - 50px);
+  z-index: 99;
+}
+
+.about .content-about {
+  padding: 40px 20px;
+}
+.about .content-about .content {
+  grid-area: left;
+  padding: 10px;
+  background-color: var(--color-light);
+  box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.3);
+}
+.about .content-about .content p {
+  padding: 10px 5px 5px;
+}
+.about .content-about .content span {
+  width: 50%;
+  display: inline-flex;
+  padding: 2px;
+}
+.about .content-about .content span::before {
+  content: "";
+  width: 30px;
+  background-image: url("../../arrow.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  letter-spacing: 0px;
+}
