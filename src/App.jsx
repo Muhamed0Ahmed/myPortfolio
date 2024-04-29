@@ -15,6 +15,9 @@ function App() {
           <li class="col-12 col-sm-6 col-md-4 col text-center">Contact Me</li>
           <li class="col-12 col-sm-6 col-md-4 col text-center">item</li>
         </ul>
+        <div>
+          this is website
+        </div>
       </div>
       
     </div>
